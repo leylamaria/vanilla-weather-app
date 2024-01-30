@@ -1,51 +1,95 @@
 body {
-  background: radial-gradient(
-    circle at 10.6% 23.3%,
-    rgb(186, 162, 252) 0%,
-    rgb(176, 248, 242) 72.4%
-  );
+  background-image: url(/Users/leylasukha/Pictures/nature-scene.jpg);
   background-size: cover;
-
+  background-repeat: no-repeat;
   font-family: "Rubik", sans-serif;
 }
+input::placeholder {
+  color: #18433f;
+}
+
+a {
+  color: #b8ccc7;
+}
+
+footer {
+  border-top: 1px solid
+    linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  color: #b8ccc7;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 12px;
+}
+
 .weather-app {
   background: radial-gradient(
     circle at 10% 20%,
     rgb(0, 0, 0) 0%,
     rgb(64, 64, 64) 90.2%
   );
-  color: #b0f8f2;
+  color: #3d9086;
   border-radius: 15px;
   margin: 70px auto;
-  max-width: 350px;
-  padding: 40px;
-}
-a {
-  color: #b0f8f2;
-}
-footer {
-  border-top: 1px solid
-    linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-  color: #b0f8f2;
-  padding: 30px 0 0 0;
-  text-align: center;
-  font-size: 12px;
+  max-width: 400px;
+  padding: 30px;
+  position: relative;
+  margin-top: 180px;
 }
 .search-form-input {
-  background: #b3c8f6;
+  background: #b8ccc7;
   border: none;
-  border-radius: 11px;
-  color: #000000;
+  border-radius: 9px;
   font-size: 16px;
   padding: 15px 30px;
   width: 70%;
 }
 .search-form-button {
-  background: #b0f8f2;
+  background: #b8ccc7;
   padding: 15px 20px;
   border: none;
-  border-radius: 11px;
+  border-radius: 9px;
   font-size: 16px;
-  color: black;
+  color: #18433f;
   margin-left: 10px;
+}
+
+.weather-app-city {
+  color: #3d9086;
+  font-family: "Rubik 80s Fade", system-ui;
+  font-size: 52px;
+  line-height: 48px;
+  margin-top: 40px;
+}
+.weather-app-details {
+  color: #b8ccc7;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.weather-app-conditions {
+  text-align: center;
+}
+.weather-app-temperature-container {
+  display: flex;
+  font-family: "Rubik 80s Fade", system-ui;
+  margin-left: 20px;
+}
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-app-icon {
+  font-size: 40px;
+  margin: 40px 10px 0 0;
+}
+.weather-app-temperature {
+  font-size: 60px;
+  color: #3d9086;
+  margin-top: 30px;
+}
+.weather-app-unit {
+  color: #3d9086;
+  font-size: 28px;
+  margin-top: 40px;
 }
