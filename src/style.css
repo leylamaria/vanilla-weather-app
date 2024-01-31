@@ -26,15 +26,19 @@ header {
   max-width: 400px;
   padding: 30px;
 }
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 
 .search-form-input {
   background: #b8ccc7;
   border: none;
   border-radius: 9px;
   font-size: 16px;
-
+  flex: 1 0 10rem;
   padding: 15px 30px;
-  width: 70%;
 }
 input::placeholder {
   color: #18433f;
@@ -45,8 +49,8 @@ input::placeholder {
   border: none;
   border-radius: 9px;
   font-size: 16px;
-
-  margin-left: 10px;
+  flex: 1 0 3rem;
+  margin-left: 5px;
   padding: 15px 20px;
 }
 main {
