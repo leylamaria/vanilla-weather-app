@@ -22,7 +22,7 @@ header {
   border-radius: 15px;
   box-shadow: 15px 15px 15px rgb(0, 0, 0, 0.6);
   color: #3d9086;
-  margin: 180px auto;
+  margin: 120px auto;
   max-width: 400px;
   padding: 30px;
 }
@@ -84,13 +84,15 @@ main {
 }
 
 .weather-app-icon {
-  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  margin-top: -7px;
 }
 .weather-app-temperature {
   color: #3d9086;
-  font-size: 60px;
+  font-size: 77px;
+  line-height: 88px;
   font-weight: 750;
-  margin: -7px 0 0 10px;
 }
 .weather-app-unit {
   color: #3d9086;
