@@ -44,8 +44,8 @@ input::placeholder {
   color: #18433f;
 }
 .search-form-button {
-  background: #b8ccc7;
-  color: #18433f;
+  background: #3d9086;
+  color: #b8ccc7;
   border: none;
   border-radius: 9px;
   font-size: 16px;
@@ -71,6 +71,13 @@ main {
   margin: 10px auto;
   text-align: center;
 }
+#time {
+  font-size: 30px;
+  color: #3d9086;
+}
+#description {
+  margin-top: -20px;
+}
 .weather-app-conditions {
   color: #b8ccc7;
   text-align: center;
@@ -89,13 +96,13 @@ main {
   margin-top: -7px;
 }
 .weather-app-temperature {
-  color: #3d9086;
+  color: #b8ccc7;
   font-size: 77px;
   line-height: 88px;
   font-weight: 750;
 }
 .weather-app-unit {
-  color: #3d9086;
+  color: #b8ccc7;
   font-size: 28px;
   font-weight: 700;
 }
