@@ -5,7 +5,8 @@ body {
   font-family: "Rubik", sans-serif;
 }
 a {
-  color: #b8ccc7;
+  color: #3d9086;
+  text-decoration: none;
 }
 header {
   border-bottom: 1px solid
@@ -118,6 +119,7 @@ hr {
 }
 .weather-forecast-day {
   text-align: center;
+  padding: 0 15px;
 }
 .weather-forecast-date {
   color: #b8ccc7;
@@ -131,11 +133,12 @@ hr {
 .weather-forecast-temperatures {
   display: flex;
   justify-content: center;
+  font-size: 15px;
   margin-top: 10px;
   text-align: center;
 }
 .weather-forecast-temperature {
-  padding: 0 5px;
+  padding: 0 3px;
 }
 
 footer {
