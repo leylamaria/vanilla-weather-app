@@ -19,7 +19,10 @@ function refreshWeather(response) {
               src="${response.data.condition.icon_url}"
               class="weather-app-icon"
             />`;
+
+  getForecast(response.data.city);
 }
+
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
@@ -38,9 +41,6 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
   return `${day} ${hours}:${minutes}`;
 }
 
@@ -58,7 +58,16 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "445od433c4e95b2d074a20e8fb1cta30";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -85,4 +94,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Munich");
-displayForecast();
