@@ -119,16 +119,18 @@ hr {
 }
 .weather-forecast-day {
   text-align: center;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 .weather-forecast-date {
   color: #b8ccc7;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 22px;
   margin-bottom: 10px;
 }
 .weather-forecast-icon {
-  font-size: 36px;
+  width: 70px;
+  height: 70px;
 }
 .weather-forecast-temperatures {
   display: flex;
